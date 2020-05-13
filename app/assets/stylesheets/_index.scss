@@ -1,5 +1,36 @@
-.aaaaa{
-  background-color: red;
-  width: 100vw;
-  height: 100vh;
+.t-content{
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  text-align: center;
+  &__title{
+    padding-top: 270px;
+    h1{
+      font-size: 80px;
+      color: white;
+      text-shadow: white 1px 0 5px;
+    }
+  }
+  &__text{
+    padding-top: 30px;
+    a{
+      font-size: 40px;
+      color: white;
+    }
+  }
+  .t-btm{
+    padding-top: 60px;
+    a{
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      border-radius: 30px;
+      padding: 10px 20px 10px;
+    }
+    
+  }
+
 }
