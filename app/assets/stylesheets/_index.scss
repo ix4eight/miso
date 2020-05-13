@@ -21,16 +21,21 @@
     }
   }
   .t-btm{
-    padding-top: 60px;
-    a{
-      font-size: 30px;
-      color: white;
-      text-decoration: none;
-      border: 1px solid white;
-      border-radius: 30px;
-      padding: 10px 20px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    &__a{
+      padding-top: 60px;
+      a{
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 10px 20px 10px;
+      }
+      
     }
-    
   }
+
 
 }

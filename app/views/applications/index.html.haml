@@ -4,13 +4,15 @@
     .t-content__title
       %h1 ようこそ
     .t-content__text
-      %a あなたのライブラリを追加しましょう。
-    - if user_signed_in?
-      .t-btm
+      %a あなたのライブラリを作れます
+    .t-content__text
+      %a あなたのことが知りたいのでおしえて頂けますか？
+    .t-btm
+      .t-btm__a
         = link_to "#" do
-          追加
-    - else
-      .t-btm
-        = link_to new_user_session_path do
-          追加
+          ログイン
+      .t-btm__a
+        = link_to "#" do
+          新規会員登録
+
 
