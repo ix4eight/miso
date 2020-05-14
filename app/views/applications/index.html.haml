@@ -1,16 +1,13 @@
 .t-contents
   = image_tag "book.jpeg",width:"100%",height:"800"
   - if user_signed_in?
-    .t-logout
-      = link_to destroy_user_session_path, method: :delete do
-        ログアウト
     .t-content
       .t-content__title
         %h1 また会いましたね
       .t-content__text
-        %a あなたのライブラリを作りましょう
+        = "#{@user.nickname }さんのライブラリを作りましょう"
       .t-content__text
-        %a あなたの使っているアプリケーションをおしえて頂けますか？
+        = "#{@user.nickname }さんの使っているアプリケーションをおしえて頂けますか？"
       .t-btm
         .t-btm__a
           = link_to "#" do
@@ -18,14 +15,17 @@
         .t-btm__a
           = link_to "#" do
             おしえる
+        .t-logout
+          = link_to destroy_user_session_path, method: :delete do
+            ログアウト
   - else
     .t-content
       .t-content__title
         %h1 ようこそ
       .t-content__text
-        %a あなたのライブラリを作れます
+        あなたのライブラリを作れます
       .t-content__text
-        %a あなたのことが知りたいのでおしえて頂けますか？
+        あなたのことが知りたいのでおしえて頂けますか？
       .t-btm
         .t-btm__a
           = link_to new_user_session_path do
