@@ -23,7 +23,7 @@
       color: lawngreen;
     }
     .instagram{
-      color: palevioletred;
+      color: magenta;
     }
     .discord{
       color: #6A5ACD;
@@ -45,6 +45,10 @@
       border: 2px solid white;
       border-radius: 30px;
       padding: 10px 20px 10px;
+    }
+    a:hover {
+      background-color: black;
+      border: 2px solid black;
     }
   }
 }
