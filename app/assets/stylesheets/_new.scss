@@ -1,0 +1,50 @@
+.n-content{
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  &__title{
+    padding-top: 50px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+  &__box{
+    padding-top: 100px;
+    display: flex;
+    color: white;
+    font-size: 80px;
+    justify-content: space-evenly;
+    .twitter{
+      color: skyblue;
+    }
+    .line{
+      color: lawngreen;
+    }
+    .instagram{
+      color: palevioletred;
+    }
+    .discord{
+      color: #6A5ACD;
+    }
+    .steam{
+      color: #000011;
+    }
+    .skype{
+      color: #00FFFF;
+    }
+  }
+  &__btm{
+    padding-top: 100px;
+    text-align: center;
+    a{
+      font-size: 40px;
+      color: white;
+      text-decoration: none;
+      border: 2px solid white;
+      border-radius: 30px;
+      padding: 10px 20px 10px;
+    }
+  }
+}
