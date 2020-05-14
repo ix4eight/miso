@@ -6,7 +6,7 @@
   bottom: 0;
   text-align: center;
   &__title{
-    padding-top: 250px;
+    padding-top: 150px;
     h1{
       font-size: 80px;
       color: white;
@@ -21,7 +21,7 @@
   .t-btm{
     display: flex;
     justify-content: space-evenly;
-    &__a{
+    &__1{
       padding-top: 60px;
       a{
         font-size: 30px;
@@ -33,22 +33,17 @@
       }
     }
   }
-}
-.t-logout{
-  position: absolute;
-  top:0;
-  right:0;
-  left:0;
-  bottom: 0;
-  text-align: right;
-  padding-right: 30px;
-  padding-top: 30px;
-  a{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 30px;
-    padding: 10px 20px 10px;
+  .t-logout{
+    padding-top: 30px;
+    padding-right: 30px;
+    text-align: right;
+    a{
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      border-radius: 30px;
+      padding: 10px 20px 10px;
+    }
   }
 }

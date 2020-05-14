@@ -2,22 +2,19 @@
   = image_tag "book.jpeg",width:"100%",height:"800"
   - if user_signed_in?
     .t-content
+      .t-logout
+        = link_to destroy_user_session_path, method: :delete do
+          ログアウト
       .t-content__title
         %h1 また会いましたね
       .t-content__text
-        = "#{@user.nickname }さんのライブラリを作りましょう"
+        = "#{current_user.nickname }さんのライブラリを作りましょう"
       .t-content__text
-        = "#{@user.nickname }さんの使っているアプリケーションをおしえて頂けますか？"
+        = "#{current_user.nickname }さんの使っているアプリケーションをおしえて頂けますか？"
       .t-btm
-        .t-btm__a
-          = link_to "#" do
-            ライブラリ
-        .t-btm__a
-          = link_to "#" do
+        .t-btm__1
+          = link_to new_application_path do
             おしえる
-        .t-logout
-          = link_to destroy_user_session_path, method: :delete do
-            ログアウト
   - else
     .t-content
       .t-content__title
@@ -27,9 +24,9 @@
       .t-content__text
         あなたのことが知りたいのでおしえて頂けますか？
       .t-btm
-        .t-btm__a
+        .t-btm__1
           = link_to new_user_session_path do
             ログイン
-        .t-btm__a
+        .t-btm__1
           = link_to new_user_registration_path do
             新規会員登録
