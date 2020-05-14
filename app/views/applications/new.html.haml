@@ -5,22 +5,28 @@
       = "#{current_user.nickname }さんのアプリケーションはございますか？"
     .n-content__box
       .twitter
-        %i.fab.fa-twitter
+        = link_to "#" do
+          %i.fab.fa-twitter
       .line
-        %i.fab.fa-line
+        = link_to "#" do
+          %i.fab.fa-line
       .instagram
-        %i.fab.fa-instagram
+        = link_to "#" do
+          %i.fab.fa-instagram
       .discord
-        %i.fab.fa-discord
+        = link_to "#" do
+          %i.fab.fa-discord
       .steam
-        %i.fab.fa-steam
+        = link_to "#" do
+          %i.fab.fa-steam
       .skype
-        %i.fab.fa-skype
+        = link_to "#" do
+          %i.fab.fa-skype
     .n-content__btm
-      =link_to "#" do
+      = link_to "#" do
         決定
     .n-content__btm
-      =link_to root_path do
+      = link_to root_path do
         戻る
 
 

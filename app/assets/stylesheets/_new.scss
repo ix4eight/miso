@@ -17,22 +17,40 @@
     font-size: 80px;
     justify-content: space-evenly;
     .twitter{
-      color: skyblue;
+      a{
+        text-decoration: none;
+        color: skyblue;
+      }
     }
     .line{
-      color: lawngreen;
+      a{
+        text-decoration: none;
+        color: lawngreen;
+      }
     }
     .instagram{
-      color: magenta;
+      a{
+        text-decoration: none;
+        color: magenta;
+      }
     }
     .discord{
-      color: #6A5ACD;
+      a{
+        text-decoration: none;
+        color: #6A5ACD;
+      }
     }
     .steam{
-      color: #000011;
+      a{
+        text-decoration: none;
+        color: #000011;
+      }
     }
     .skype{
-      color: #00FFFF;
+      a{
+        text-decoration: none;
+        color: #00FFFF;
+      }
     }
   }
   &__btm{
