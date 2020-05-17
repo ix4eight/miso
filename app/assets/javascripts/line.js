@@ -1,6 +1,7 @@
-function launchApp() {
+function lineApp() {
   var IOS_SCHEME = 'https://line.me/R/';
   var IOS_STORE = 'https://liff.line.me/';
+  var PC_SITE = 'http://54.249.145.150/'
 
   var userAgent = navigator.userAgent.toLowerCase();
   // iPhone端末ならアプリを開くかApp Storeを開く。
@@ -21,7 +22,8 @@ function launchApp() {
   }
 }
 
-// ページ読み込み時に実行
-window.onload = function() {
-  launchApp();
-}
+$(function() {
+  $('#line').click(function() {
+    lineApp();
+  })
+})
