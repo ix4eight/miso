@@ -31,12 +31,17 @@
         border-radius: 30px;
         padding: 10px 20px 10px;
       }
+      a:hover {
+        background-color: black;
+        border: 2px solid black;
+      }
     }
   }
   .t-logout{
     padding-top: 30px;
     padding-right: 30px;
     text-align: right;
+    
     a{
       font-size: 20px;
       color: white;
@@ -44,6 +49,10 @@
       border: 1px solid white;
       border-radius: 30px;
       padding: 10px 20px 10px;
+    }
+    a:hover {
+      background-color: black;
+      border: 2px solid black;
     }
   }
 }
