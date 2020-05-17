@@ -16,46 +16,66 @@
     background-color: white;
     font-size: 80px;
     justify-content: space-evenly;
-    .twitter{
-      a{
-        text-decoration: none;
+    #twitter{
+      .fa-twitter{
         color: #1E90FF;
       }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
-    .line{
-      a{
-        text-decoration: none;
+    #line{
+      .fa-line{
         color: #32CD32;
       }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
-    .instagram{
-      a{
-        text-decoration: none;
+    #instagram{
+      .fa-instagram{
         color: magenta;
       }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
-    .discord{
-      a{
-        text-decoration: none;
+    #discord{
+      .fa-discord{
         color: #6A5ACD;
       }
-    }
-    .steam{
-      a{
-        text-decoration: none;
-        color: #000011;
+
+      &:hover {
+        cursor: pointer;
       }
     }
-    .skype{
-      a{
-        text-decoration: none;
+    #steam{
+      .fa-steam{
+        color: #000011;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    #skype{
+      .fa-skype{
         color: #00FFFF;
+      }
+
+      &:hover {
+        cursor: pointer;
       }
     }
   }
+
   &__btm{
     padding-top: 100px;
     text-align: center;
+
     a{
       font-size: 40px;
       color: white;
@@ -64,6 +84,7 @@
       border-radius: 30px;
       padding: 10px 20px 10px;
     }
+
     a:hover {
       background-color: black;
       border: 2px solid black;
