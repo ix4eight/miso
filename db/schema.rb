@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_13_140321) do
+ActiveRecord::Schema.define(version: 2020_05_17_150123) do
+
+  create_table "libraries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "twitter", null: false
+    t.integer "line", null: false
+    t.integer "instagram", null: false
+    t.integer "discord", null: false
+    t.integer "steam", null: false
+    t.integer "skype", null: false
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_libraries_on_user_id"
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname", null: false
@@ -25,4 +38,5 @@ ActiveRecord::Schema.define(version: 2020_05_13_140321) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "libraries", "users"
 end
