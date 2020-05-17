@@ -23,7 +23,7 @@ function lineApp() {
 }
 
 $(function() {
-  $('#line').click(function() {
+  $(l).click(function() {
     lineApp();
   })
 })
