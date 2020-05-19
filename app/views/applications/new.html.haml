@@ -5,20 +5,26 @@
       .n-content__title
         = "#{current_user.nickname }さんのアプリケーションはございますか？"
       .n-content__box
-        .twitter
+        .twitter{ id: "twitter" }
           %i.fab.fa-twitter
+            = form.check_box :twitter
         .line
           %i.fab.fa-line
+            = form.check_box :line
         .instagram
           %i.fab.fa-instagram
+            = form.check_box :instagram
         .discord
           %i.fab.fa-discord
+            = form.check_box :discord
         .steam
           %i.fab.fa-steam
+            = form.check_box :steam
         .skype
           %i.fab.fa-skype
+            = form.check_box :skype
       .n-content__btm
-
+        = form.submit "決定"
       .n-content__btm
         = link_to root_path do
           戻る

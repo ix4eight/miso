@@ -15,7 +15,7 @@ class ApplicationsController < ApplicationController
   end
 
   def create
-
+    
   end
 
   private
