@@ -4,22 +4,27 @@ class ApplicationsController < ApplicationController
   end
 
   def new
-    @library = Library.new
-    @library.twitter = 0
-    @library.line = 0
-    @library.instagram = 0
-    @library.discord = 0
-    @library.steam = 0
-    @library.skype = 0
-    @library.user_id = current_user.id
+      @library = Library.new
   end
 
   def create
-    
+    @library = Library.new(library_params)
+    if @library.save
+      flash[:notice] = "成功"
+      redirect_to application_path(current_user.id)
+    else
+      flash.now[:alert] = "失敗"
+      render :new
+    end
+  end
+
+  def show
+
   end
 
   private
+
   def library_params
-    params.require(:library).permit(:twitter, :line, :instagram, :discord, :steam, :skype).merge(user_id: current_user.id)
+    params.permit(:twitter, :line, :instagram, :discord, :steam, :skype).merge(user_id: current_user.id)
   end
 end

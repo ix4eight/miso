@@ -7,22 +7,22 @@
       .n-content__box
         .twitter{ id: "twitter" }
           %i.fab.fa-twitter
-            = form.check_box :twitter
+            = form.check_box(:twitter, checked_value: 1, unchecked_value: 0)
         .line
           %i.fab.fa-line
-            = form.check_box :line
+            = form.check_box(:line, checked_value: 1, unchecked_value: 0)
         .instagram
           %i.fab.fa-instagram
-            = form.check_box :instagram
+            = form.check_box(:instagram, checked_value: 1, unchecked_value: 0)
         .discord
           %i.fab.fa-discord
-            = form.check_box :discord
+            = form.check_box(:discord, checked_value: 1, unchecked_value: 0)
         .steam
           %i.fab.fa-steam
-            = form.check_box :steam
+            = form.check_box(:steam, checked_value: 1, unchecked_value: 0)
         .skype
           %i.fab.fa-skype
-            = form.check_box :skype
+            = form.check_box(:skype, checked_value: 1, unchecked_value: 0)
       .n-content__btm
         = form.submit "決定"
       .n-content__btm
