@@ -19,7 +19,7 @@ class ApplicationsController < ApplicationController
   end
 
   def show
-
+    @library = Library.find_by(twitter: 1)
   end
 
   private
