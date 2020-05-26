@@ -2,31 +2,23 @@
   = image_tag "book3.jpeg",width:"100%",height:"800"
   .s-content
     .s-content__title
-      = "#{current_user.nickname }さんようこそ、あなたのライブラリです。"
+      = "#{current_user.nickname}さんようこそ、あなたのライブラリです。"
     .s-content__box
       .twitter
-        - if @library.twitter == 1
+        - unless @library.twitter != 1
           %i.fab.fa-twitter
-        - else
       .line
-        - if @library.line == 1
+        - unless @library.line != 1
           %i.fab.fa-line
-        - else
       .instagram
-        - if @library.instagram == 1
+        - unless @library.instagram != 1
           %i.fab.fa-instagram
-        - else
       .discord
-        - if @library.discord == 1
+        - unless @library.discord != 1
           %i.fab.fa-discord
-        - else
       .steam
-        - if @library.steam == 1
+        - unless @library.steam != 1
           %i.fab.fa-steam
-        - else
       .skype
-        - if @library.skype == 1
+        - unless @library.skype != 1
           %i.fab.fa-skype
-        - else
-
-

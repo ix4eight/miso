@@ -1,7 +1,7 @@
-function lineApp() {
-  var IOS_SCHEME = 'line';
-  var IOS_STORE = 'itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=';
-  var PC_SITE = 'https://liff.line.me/';
+function steamApp() {
+  var IOS_SCHEME = 'steam';
+  var IOS_STORE = 'itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=steam';
+  var PC_SITE = 'https://itunes.apple.com/jp/app/steam-mobile/id495369748?mt=8';
 
   var userAgent = navigator.userAgent.toLowerCase();
   // iPhone端末ならアプリを開くかApp Storeを開く。
@@ -23,7 +23,7 @@ function lineApp() {
 }
 
 $(function() {
-  $(".line").click(function() {
-    lineApp();
+  $(".steam").click(function() {
+    steamApp();
   })
 })

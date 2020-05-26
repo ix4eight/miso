@@ -1,12 +1,12 @@
-function lineApp() {
-  var IOS_SCHEME = 'line';
-  var IOS_STORE = 'itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=';
-  var PC_SITE = 'https://liff.line.me/';
+function instagramApp() {
+  var IOS_SCHEME = 'instagram';
+  var IOS_STORE = 'itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=instagram';
+  var PC_SITE = 'https://itunes.apple.com/jp/app/instagram/id389801252?mt=8';
 
   var userAgent = navigator.userAgent.toLowerCase();
   // iPhone端末ならアプリを開くかApp Storeを開く。
   if (userAgent.search(/iphone|ipad|ipod|mac/) > -1) {
-    location.href = IOS_SCHEME + '://';
+    location.href = IOS_SCHEME + '://app';
       setTimeout(function() {
           location.href = IOS_STORE;
       }, 10000);
@@ -23,7 +23,7 @@ function lineApp() {
 }
 
 $(function() {
-  $(".line").click(function() {
-    lineApp();
+  $(".instagram").click(function() {
+    instagramApp();
   })
 })
