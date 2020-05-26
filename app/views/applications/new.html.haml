@@ -5,7 +5,7 @@
       .n-content__title
         = "#{current_user.nickname }さんのアプリケーションはございますか？"
       .n-content__box
-        .twitter{ id: "twitter" }
+        .twitter
           %i.fab.fa-twitter
             = form.check_box(:twitter, checked_value: 1, unchecked_value: 0)
         .line
