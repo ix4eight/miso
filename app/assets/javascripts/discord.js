@@ -23,7 +23,7 @@ function discordApp() {
 }
 
 $(function() {
-  $(".discord").click(function() {
+  $("#discord").click(function() {
     discordApp();
   })
 })

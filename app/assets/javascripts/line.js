@@ -1,6 +1,6 @@
 function lineApp() {
   var IOS_SCHEME = 'line';
-  var IOS_STORE = 'itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=';
+  var IOS_STORE = 'itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=line';
   var PC_SITE = 'https://liff.line.me/';
 
   var userAgent = navigator.userAgent.toLowerCase();
@@ -23,7 +23,7 @@ function lineApp() {
 }
 
 $(function() {
-  $(".line").click(function() {
+  $("#line").click(function() {
     lineApp();
   })
 })
