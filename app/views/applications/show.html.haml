@@ -4,21 +4,21 @@
     .s-content__title
       = "#{current_user.nickname}さんようこそ、あなたのライブラリです。"
     .s-content__box
-      .twitter
+      #twitter
         - unless @library.twitter != 1
           %i.fab.fa-twitter
-      .line
+      #line
         - unless @library.line != 1
           %i.fab.fa-line
-      .instagram
+      #instagram
         - unless @library.instagram != 1
           %i.fab.fa-instagram
-      .discord
+      #discord
         - unless @library.discord != 1
           %i.fab.fa-discord
-      .steam
+      #steam
         - unless @library.steam != 1
           %i.fab.fa-steam
-      .skype
+      #skype
         - unless @library.skype != 1
           %i.fab.fa-skype
