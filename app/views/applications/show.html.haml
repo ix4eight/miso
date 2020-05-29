@@ -22,3 +22,11 @@
       #skype
         - unless @library.skype != 1
           %i.fab.fa-skype
+    .s-content__btm
+      .s-content__box--btn
+        = link_to edit_application_path(current_user.id) do
+          %button.btn
+            編集する
+        = link_to application_path(current_user.id), method: :delete do
+          %button.btn
+            削除する

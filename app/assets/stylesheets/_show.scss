@@ -71,4 +71,25 @@
       }
     }
   }
+  &__btm{
+    text-align: center;
+    padding-top: 100px;
+    button{
+      line-height: 48px;
+      background: white;
+      border: 5px solid white;
+      color: #fff;
+      font-size: 20px;
+      border-radius: 100px;
+      cursor: pointer;
+      outline: none;
+      padding: 0 40px;
+      color: black;
+    }
+    button:hover{
+      box-shadow: 0 10px 15px -5px rgba(0,0,0,.15),0 0 5px rgba(0,0,0,.1);
+      transform: translateY(-3px);
+      transition: 0.3s;
+    }
+  }
 }
