@@ -24,13 +24,13 @@ class ApplicationsController < ApplicationController
   end
   
   def edit
-    @library = Library.find(params[:id])
+    @library = Library.find_by(params[:id])
   end
 
   def update
-    @library = Library.find(params[:id])
+    @library = Library.find_by(params[:id])
     if @library.update(library_params)
-      redirect_to application_path(current_user.id), notice: '投稿を編集しました'
+      redirect_to application_path(current_user.id)
     else
       render :edit
     end
