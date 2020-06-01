@@ -9,7 +9,7 @@ class ApplicationsController < ApplicationController
   end
 
   def create
-    @library = Library.new(library_params)
+    @library = Library.new(library_params_new)
     if @library.save
       flash[:notice] = "成功"
       redirect_to application_path(current_user.id)
@@ -29,7 +29,7 @@ class ApplicationsController < ApplicationController
 
   def update
     @library = Library.find_by(params[:id])
-    if @library.update(library_params)
+    if @library.update(library_params_edit)
       redirect_to application_path(current_user.id)
     else
       render :edit
@@ -42,7 +42,11 @@ class ApplicationsController < ApplicationController
   end
 
   private
-  def library_params
+  def library_params_edit
+    params.require(:library).permit(:twitter, :line, :instagram, :discord, :steam, :skype).merge(user_id: current_user.id)
+  end
+
+  def library_params_new
     params.permit(:twitter, :line, :instagram, :discord, :steam, :skype).merge(user_id: current_user.id)
   end
 
