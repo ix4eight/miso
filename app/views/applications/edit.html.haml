@@ -56,5 +56,5 @@
       .n-content__btm
         = form.submit "更新"
       .n-content__btm
-        = link_to root_path do
+        = link_to application_path(current_user.id) do
           戻る
