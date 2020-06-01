@@ -5,24 +5,54 @@
       .n-content__title
         = "#{current_user.nickname }さんのアプリケーションを追加しましょう"
       .n-content__box
-        .twitter
-          %i.fab.fa-twitter
-            = form.check_box(:twitter, checked_value: 1, unchecked_value: 0)
-        .line
-          %i.fab.fa-line
-            = form.check_box(:line, checked_value: 1, unchecked_value: 0)
-        .instagram
-          %i.fab.fa-instagram
-            = form.check_box(:instagram, checked_value: 1, unchecked_value: 0)
-        .discord
-          %i.fab.fa-discord
-            = form.check_box(:discord, checked_value: 1, unchecked_value: 0)
-        .steam
-          %i.fab.fa-steam
-            = form.check_box(:steam, checked_value: 1, unchecked_value: 0)
-        .skype
-          %i.fab.fa-skype
-            = form.check_box(:skype, checked_value: 1, unchecked_value: 0)
+        - if @library.twitter == 1
+          .twitter
+            %i.fab.fa-twitter
+              = form.check_box(:twitter, checked: "checked", checked_value: 1, unchecked_value: 0)
+        - else
+          .twitter
+            %i.fab.fa-twitter
+              = form.check_box(:twitter, checked_value: 0, unchecked_value: 1)
+        - if @library.line == 1
+          .line
+            %i.fab.fa-line
+              = form.check_box(:line, checked: "checked", checked_value: 1, unchecked_value: 0)
+        - else
+          .line
+            %i.fab.fa-line
+              = form.check_box(:line, checked_value: 1, unchecked_value: 0)
+        - if @library.instagram == 1
+          .instagram
+            %i.fab.fa-instagram
+              = form.check_box(:instagram, checked: "checked", checked_value: 1, unchecked_value: 0)
+        - else
+          .instagram
+            %i.fab.fa-instagram
+              = form.check_box(:instagram, checked_value: 1, unchecked_value: 0)
+        - if @library.discord == 1
+          .discord
+            %i.fab.fa-discord
+              = form.check_box(:discord, checked: "checked", checked_value: 1, unchecked_value: 0)
+        - else
+          .discord
+            %i.fab.fa-discord
+              = form.check_box(:discord, checked_value: 1, unchecked_value: 0)
+        - if @library.steam == 1
+          .steam
+            %i.fab.fa-steam
+              = form.check_box(:steam, checked: "checked", checked_value: 1, unchecked_value: 0)
+        - else
+          .steam
+            %i.fab.fa-steam
+              = form.check_box(:steam, checked_value: 1, unchecked_value: 0)
+        - if @library.skype == 1
+          .skype
+            %i.fab.fa-skype
+              = form.check_box(:skype, checked: "checked", checked_value: 1, unchecked_value: 0)
+        - else
+          .skype
+            %i.fab.fa-skype
+              = form.check_box(:skype, checked_value: 1, unchecked_value: 0)
       .n-content__btm
         = form.submit "更新"
       .n-content__btm
