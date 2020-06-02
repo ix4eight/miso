@@ -37,7 +37,7 @@ class ApplicationsController < ApplicationController
   end
 
   def destroy
-    library = Library.find(params[:id])
+    library = Library.find_by(params[:id])
     library.destroy
   end
 
