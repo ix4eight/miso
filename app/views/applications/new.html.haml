@@ -1,5 +1,5 @@
 .n-contents
-  = image_tag "book2.jpeg",width:"100%",height:"800"
+  = image_tag "book1.jpeg",width:"100%",height:"800"
   .n-content
     = form_with url: applications_path ,local: true do |form|
       .n-content__title
@@ -24,10 +24,7 @@
           %i.fab.fa-skype
             = form.check_box(:skype, checked_value: 1, unchecked_value: 0)
       .n-content__btm
-        %button
-          = form.submit "決定"
+        = form.submit "決定", class:"btm"
       .n-content__btm
-        %button
-          = link_to root_path do
-            戻る
-            
+        = link_to root_path do
+          戻る

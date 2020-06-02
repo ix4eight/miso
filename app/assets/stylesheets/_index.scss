@@ -23,17 +23,23 @@
     justify-content: space-evenly;
     &__1{
       padding-top: 60px;
+      
       a{
-        font-size: 40px;
+        font-size: 30px;
         color: white;
         text-decoration: none;
-        border: 1px solid white;
         border-radius: 30px;
         padding: 10px 20px 10px;
+        border: 2px solid #fff;
+        line-height: 50px;
       }
       a:hover {
-        background-color: black;
-        border: 2px solid black;
+        background-color: #fff;
+        border-color: #59b1eb;
+        color: #59b1eb;
+        box-shadow: 0 10px 15px -5px rgba(0,0,0,.15),0 0 5px rgba(0,0,0,.1);
+        transform: translateY(-3px);
+        transition: 0.3s;
       }
     }
   }
@@ -46,13 +52,18 @@
       font-size: 20px;
       color: white;
       text-decoration: none;
-      border: 1px solid white;
       border-radius: 30px;
       padding: 10px 20px 10px;
+      border: 2px solid #fff;
+      line-height: 50px;
     }
     a:hover {
-      background-color: black;
-      border: 2px solid black;
+      background-color: #fff;
+      border-color: #59b1eb;
+      color: #59b1eb;
+      box-shadow: 0 10px 15px -5px rgba(0,0,0,.15),0 0 5px rgba(0,0,0,.1);
+      transform: translateY(-3px);
+      transition: 0.3s;
     }
   }
 }

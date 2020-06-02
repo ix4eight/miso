@@ -3,6 +3,6 @@ $(function(){
   //ブラウザバックボタン押下時
   $(window).on("popstate", function (event) {
     history.pushState(null, null, null);
-    window.alert('前のページに戻る場合、前に戻るボタンから戻ってください。');
+    window.alert('前のページに戻る場合、戻るボタンから戻ってください。');
   });
 });
