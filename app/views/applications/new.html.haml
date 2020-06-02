@@ -24,7 +24,10 @@
           %i.fab.fa-skype
             = form.check_box(:skype, checked_value: 1, unchecked_value: 0)
       .n-content__btm
-        = form.submit "決定"
+        %button
+          = form.submit "決定"
       .n-content__btm
-        = link_to root_path do
-          戻る
+        %button
+          = link_to root_path do
+            戻る
+            
