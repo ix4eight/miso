@@ -1,11 +1,12 @@
 class ApplicationsController < ApplicationController
+  before_action :exists, only: [:index, :new]
 
   def index
     
   end
 
   def new
-      @library = Library.new
+    @library = Library.new
   end
 
   def create
@@ -48,6 +49,12 @@ class ApplicationsController < ApplicationController
 
   def library_params_new
     params.permit(:twitter, :line, :instagram, :discord, :steam, :skype).merge(user_id: current_user.id)
+  end
+
+  def exists
+    if @exist = Library.find_by(user_id: current_user.id)
+      redirect_to application_path(current_user.id)
+    end
   end
 
 end
