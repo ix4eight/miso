@@ -1,4 +1,5 @@
 .logins
+  = image_tag "book.jpeg",width:"100%",height:"800"
   .login
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .login__name
@@ -14,4 +15,3 @@
       .login__actions
         = f.submit "ログイン"
     = render "devise/shared/links"
-
