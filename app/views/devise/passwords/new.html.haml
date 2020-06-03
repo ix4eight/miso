@@ -11,4 +11,7 @@
         = f.email_field :email, autofocus: true, autocomplete: "email"
       .password__actions
         = f.submit "送信"
+    .link
+      = link_to root_path do
+        トップページはこちら
     = render "devise/shared/links"

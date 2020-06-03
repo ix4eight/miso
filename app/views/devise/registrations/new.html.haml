@@ -26,4 +26,7 @@
         = f.password_field :password_confirmation, autocomplete: "new-password"
       .signup__actions
         = f.submit "登録"
+    .link
+      = link_to root_path do
+        トップページはこちら
     = render "devise/shared/links"
