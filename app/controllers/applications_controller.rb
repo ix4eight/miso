@@ -25,11 +25,11 @@ class ApplicationsController < ApplicationController
   end
   
   def edit
-    @library = Library.find_by(params[:id])
+    @library = Library.find_by(user_id: current_user.id)
   end
 
   def update
-    @library = Library.find_by(params[:id])
+    @library = Library.find_by(user_id: current_user.id)
     if @library.update(library_params_edit)
       redirect_to application_path(current_user.id)
     else
@@ -38,7 +38,7 @@ class ApplicationsController < ApplicationController
   end
 
   def destroy
-    library = Library.find_by(params[:id])
+    library = Library.find_by(user_id: current_user.id)
     library.destroy
   end
 
