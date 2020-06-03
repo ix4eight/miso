@@ -1,7 +1,7 @@
 # README
 ## miso
 <br>
-  <img src="miso.jpg" width="600x600"><br>
+  <img src="https://i.gyazo.com/dbd28c4be30eb4e9fc3cd89b7ecac9c6.jpg" width="600x600"><br>
 
 # 概要
 
