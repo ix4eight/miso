@@ -14,4 +14,7 @@
         = f.password_field :password, autocomplete: "current-password"
       .login__actions
         = f.submit "ログイン"
+    .link
+      = link_to root_path do
+        トップページはこちら
     = render "devise/shared/links"
