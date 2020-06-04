@@ -1,5 +1,5 @@
 class ApplicationsController < ApplicationController
-  before_action :exists, only: [:index, :new]
+  before_action :exists, only: [:new]
 
   def index
     
