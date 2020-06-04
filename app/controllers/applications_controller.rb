@@ -1,5 +1,5 @@
 class ApplicationsController < ApplicationController
-  before_action :exists, only: [:index, :new]
+  before_action :exists, only: [:new]
 
   def index
     
@@ -52,8 +52,11 @@ class ApplicationsController < ApplicationController
   end
 
   def exists
-    if @exist = Library.find_by(user_id: current_user.id)
-      redirect_to application_path(current_user.id)
+    if user_signed_in?
+      user = Library.find_by(user_id: current_user)
+      if user
+        redirect_to application_path(current_user.id)
+      end
     end
   end
 
