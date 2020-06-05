@@ -1,20 +1,42 @@
-.signup{
-  position: absolute;
-  top:0;
-  right:0;
-  left:0;
+.signupss{
+  position: fixed;
+  top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+.signups{
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
   text-align: center;
+  #close-modal1{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+  }
+}
+
+.signup{
   &__name{
-    padding-top: 150px;
+    padding-top: 10px;
     color: white;
     font-size: 60px;
-    text-shadow: white 1px 0 5px;
+    text-shadow: black 1px 0 5px;
   }
   &__field{
     padding-top: 10px;
     color: white;
-    text-shadow: white 1px 0 5px;
+    text-shadow: black 1px 0 5px;
     font-size: 20px;
     input{
       border-radius: 10px;
