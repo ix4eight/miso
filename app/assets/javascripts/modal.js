@@ -1,8 +1,16 @@
 $(function(){
+  $(".login-show").click(function(){
+    $("#login-modal").fadeIn();
+  });
+  $("#close-modal").click(function(){
+    $("#login-modal").fadeOut();
+  });
+});
+$(function(){
   $(".signup-show").click(function(){
     $("#signup-modal").fadeIn();
   });
-  $("#close-modal").click(function(){
+  $("#close-modal1").click(function(){
     $("#signup-modal").fadeOut();
   });
 });

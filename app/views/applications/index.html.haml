@@ -24,9 +24,9 @@
       .t-content__text
         あなたのことが知りたいのでおしえて頂けますか？
       .t-btm
-        .t-btm__1.signup-show
+        .t-btm__1.login-show
           %a ログイン
-        .loginss#signup-modal
+        .loginss#login-modal
           .logins
             #close-modal
               %i.fa.fa-times
@@ -48,39 +48,40 @@
                   %input{:autocomplete => "current-password", :type => "password", :name => "user[password]", :id => "user_password"}
                 .login__actions
                   %input{:type => "submit", :name => "commit", :value => "ログイン", :"data-disable-with" => "ログイン"}
-        .t-btm__1
-          = link_to "#" do
-            新規会員登録
-          -# .signups
-          -#   .signup
-          -#     %form{class: "new_user", :action => "/users", :accept-charset => "UTF-8", :method => "post"}
-          -#       %input{:name => "utf8", :type => "hidden", :value => "✓"}
-          -#       %input{:type => "hidden", :name => "authenticity_token", :value => "0vopqXSAxej0lk4KKOWG+YUcG2s5X+btIeQBKegvkob1KNqBEYUcJjZXNJ9bYJDpL+8AncJ0uHNFA4luEVFTAg=="}
-          -#       .signup__name
-          -#         新規登録画面
-          -#       .signup__field
-          -#         %label{:for => "user_ニックネーム"}
-          -#           ニックネーム
-          -#         %br/
-          -#         %input{:autofocus => "autofocus", :autocomplete => "nickname", :type => "text", :name => "user[nickname]", :id => "user_nickname"}
-          -#       .signup__field
-          -#         %label{:for => "user_メールアドレス"}
-          -#         %br/
-          -#         %input{:autofocus => "autofocus", :autocomplete => "email", :type => "email", :value => "" , :name => "user[email]", :id => "user_email"}
-          -#       .signup__field
-          -#         %label{:for => "user_パスワード"}
-          -#         - if @minimum_password_length
-          -#           %em
-          -#             (#{@minimum_password_length}文字以上)
-          -#         %br/
-          -#         %input{:autocomplete => "new-password", :type => "password", :name => "user[password]", :id => "user_password"}
-          -#       .signup__field
-          -#         %label{:for => "user_再パスワード"}
-          -#         %br/
-          -#         %input{:autocomplete => "new-password", :type => "password", :name => "user[password_confirmation]", :id => "user_password_confirmation"}
-          -#       .signup__actions
-          -#         %input{:type => "submit", :name => "commit", :value => "登録", :data-disable-with => "登録"}
-              -# .link
-              -#   = link_to root_path do
-              -#     トップページはこちら
-              -# = render "devise/shared/links"
+        .t-btm__1.signup-show
+          %a 新規会員登録
+        .signupss#signup-modal
+          .signups
+            #close-modal1
+              %i.fa.fa-times
+            .signup
+              %form{class: "new_user", :action => "/users", :accept-charset => "UTF-8", :method => "post"}
+                %input{:name => "utf8", :type => "hidden", :value => "✓"}
+                %input{:type => "hidden", :name => "authenticity_token", :value => "0vopqXSAxej0lk4KKOWG+YUcG2s5X+btIeQBKegvkob1KNqBEYUcJjZXNJ9bYJDpL+8AncJ0uHNFA4luEVFTAg=="}
+                .signup__name
+                  新規登録画面
+                .signup__field
+                  %label{:for => "user_ニックネーム"}
+                    ニックネーム
+                  %br/
+                  %input{:autofocus => "autofocus", :autocomplete => "nickname", :type => "text", :name => "user[nickname]", :id => "user_nickname"}
+                .signup__field
+                  %label{:for => "user_メールアドレス"}
+                    メールアドレス
+                  %br/
+                  %input{:autofocus => "autofocus", :autocomplete => "email", :type => "email", :value => "" , :name => "user[email]", :id => "user_email"}
+                .signup__field
+                  %label{:for => "user_パスワード"}
+                    パスワード(6文字以上)
+                  - if @minimum_password_length
+                    %em
+                      (#{@minimum_password_length}文字以上)
+                  %br/
+                  %input{:autocomplete => "new-password", :type => "password", :name => "user[password]", :id => "user_password"}
+                .signup__field
+                  %label{:for => "user_再パスワード"}
+                    再パスワード
+                  %br/
+                  %input{:autocomplete => "new-password", :type => "password", :name => "user[password_confirmation]", :id => "user_password_confirmation"}
+                .signup__actions
+                  %input{:type => "submit", :name => "commit", :value => "登録", :data-disable-with => "登録"}
