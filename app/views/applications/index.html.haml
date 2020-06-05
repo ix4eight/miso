@@ -26,12 +26,12 @@
       .t-btm
         .t-btm__1.signup-show
           %a ログイン
-          .loginss#signup-modal
-            .logins
-              #close-modal
-                %i.fa.fa-times
-              .login
-                %form{class: "new_user", :action => "/users/sign_in", :accept-charset => "UTF-8", :method =>"post"}
+        .loginss#signup-modal
+          .logins
+            #close-modal
+              %i.fa.fa-times
+            .login
+              %form{class: "new_user", :action => "/users/sign_in", :"accept-charset" => "UTF-8", :method =>"post"}
                 %input{:name => "utf8", :type => "hidden", :value => "✓"}
                 %input{:type => "hidden", :name => "authenticity_token", :value => "HLlAj0JDR0syLFJq8pvBZgP3Tf2VBOuOl5VCtX7PkCHoBYqWAzU0+4Jy9zYT3kVMvzGwQ1/TTBeud1NLIX/xA=="}
                 .login__name
@@ -47,7 +47,7 @@
                   %br/
                   %input{:autocomplete => "current-password", :type => "password", :name => "user[password]", :id => "user_password"}
                 .login__actions
-                  %input{:type => "submit", :name => "commit", :value => "ログイン", :data-disable-with => "ログイン"}
+                  %input{:type => "submit", :name => "commit", :value => "ログイン", :"data-disable-with" => "ログイン"}
         .t-btm__1
           = link_to "#" do
             新規会員登録
