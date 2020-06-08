@@ -1,6 +1,6 @@
 function steamApp() {
   var IOS_SCHEME = 'steam';
-  var IOS_STORE = 'itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=instagram';
+  var IOS_STORE = 'itms-apps://search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?media=software&term=steam';
   var PC_SITE = 'https://itunes.apple.com/jp/app/steam-mobile/id495369748?mt=8';
 
   var userAgent = navigator.userAgent.toLowerCase();
