@@ -19,11 +19,10 @@
     color: white;
   }
   .t-btm{
-    display: flex;
     justify-content: space-evenly;
+    display: flex;
     &__1{
       padding-top: 60px;
-      
       a{
         font-size: 30px;
         color: white;

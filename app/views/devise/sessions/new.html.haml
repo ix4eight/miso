@@ -1,20 +1,23 @@
-.logins
+.loginss#signup-modal
   = image_tag "book.jpeg",width:"100%",height:"800"
-  .login
+  .logins
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-      .login__name
-        ログイン
-      .login__field
-        = f.label :メールアドレス
-        %br/
-        = f.email_field :email, autofocus: true, autocomplete: "email"
-      .login__field
-        = f.label :パスワード
-        %br/
-        = f.password_field :password, autocomplete: "current-password"
-      .login__actions
-        = f.submit "ログイン"
-    .link
-      = link_to root_path do
-        トップページはこちら
-    = render "devise/shared/links"
+      #close-modal
+        %i.fa.fa-times
+      .login
+        .login__name
+          ログイン
+        .login__field
+          = f.label :メールアドレス
+          %br/
+          = f.email_field :email, autofocus: true, autocomplete: "email"
+        .login__field
+          = f.label :パスワード
+          %br/
+          = f.password_field :password, autocomplete: "current-password"
+        .login__actions
+          = f.submit "ログイン"
+        .link
+          = link_to root_path do
+            トップページはこちら
+        = render "devise/shared/links"
