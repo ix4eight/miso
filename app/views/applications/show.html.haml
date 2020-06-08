@@ -1,6 +1,9 @@
 .s-contents
   = image_tag "book4.jpeg",width:"100%",height:"800"
   .s-content
+    .t-logout
+      = link_to destroy_user_session_path, method: :delete do
+        ログアウト
     .s-content__title
       = "#{current_user.nickname}さんようこそ、あなたのライブラリです。"
     .s-content__box

@@ -90,3 +90,26 @@
     }
   }
 }
+.t-logout{
+  padding-top: 30px;
+  padding-right: 30px;
+  text-align: right;
+  
+  a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px 10px;
+    border: 2px solid #fff;
+    line-height: 50px;
+  }
+  a:hover {
+    background-color: #fff;
+    border-color: #59b1eb;
+    color: #59b1eb;
+    box-shadow: 0 10px 15px -5px rgba(0,0,0,.15),0 0 5px rgba(0,0,0,.1);
+    transform: translateY(-3px);
+    transition: 0.3s;
+  }
+}
