@@ -23,7 +23,7 @@ function instagramApp() {
 }
 
 $(function() {
-  $("#instagram").click(function() {
+  $("#id_instagram").click(function() {
     instagramApp();
   })
 })

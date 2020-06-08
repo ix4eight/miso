@@ -23,7 +23,7 @@ function steamApp() {
 }
 
 $(function() {
-  $("#steam").click(function() {
+  $("#id_steam").click(function() {
     steamApp();
   })
 })
