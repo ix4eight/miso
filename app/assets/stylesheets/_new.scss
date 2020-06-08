@@ -17,6 +17,11 @@
     font-size: 80px;
     justify-content: space-evenly;
     border: 2px solid #59b1eb;
+    label{
+      input{
+        display: none;
+      }
+    }
     .twitter{
       .fa-twitter{
         color: #1E90FF;
