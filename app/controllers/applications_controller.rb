@@ -1,5 +1,6 @@
 class ApplicationsController < ApplicationController
-  before_action :exists, only: [:new]
+  before_action :exists, only: [:index, :new]
+  before_action :set_cache_buster
 
   def index
     
@@ -53,11 +54,17 @@ class ApplicationsController < ApplicationController
 
   def exists
     if user_signed_in?
-      user = Library.find_by(user_id: current_user)
+      user = Library.find_by(user_id: current_user.id)
       if user
         redirect_to application_path(current_user.id)
       end
     end
+  end
+
+  def set_cache_buster
+    response.headers["Cache-Control"] = "no-cache, no-store, max-age=0, must-revalidate"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "Fri, 01 Jan 1990 00:00:00 GMT"
   end
 
 end

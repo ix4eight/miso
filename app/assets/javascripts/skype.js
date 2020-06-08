@@ -23,7 +23,7 @@ function skypeApp() {
 }
 
 $(function() {
-  $("#skype").click(function() {
+  $("#id_skype").click(function() {
     skypeApp();
   })
 })

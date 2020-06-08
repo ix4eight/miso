@@ -23,7 +23,7 @@ function twitterApp() {
 }
 
 $(function() {
-  $("#twitter").click(function() {
+  $("#id_twitter").click(function() {
     twitterApp();
   })
 })
