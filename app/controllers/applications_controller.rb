@@ -12,12 +12,12 @@ class ApplicationsController < ApplicationController
 
   def create
     @library = Library.new(library_params_new)
-    if @library.save
-      flash[:notice] = "成功"
-      redirect_to application_path(current_user.id)
-    else
-      flash.now[:alert] = "失敗"
+    if @library.twitter == 0 && @library.line == 0 && @library.instagram == 0 && @library.discord == 0 && @library.steam == 0 && @library.skype == 0
+      flash.now[:alert] = "1つ以上選んでください"
       render :new
+    else
+      @library.save
+      redirect_to application_path(current_user.id)
     end
   end
 

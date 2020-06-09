@@ -4,6 +4,8 @@
     = form_with url: applications_path ,local: true do |form|
       .n-content__title
         = "#{current_user.nickname }さんのアプリケーションはございますか？"
+        %br/
+        = flash[:alert]
       .n-content__box
         %label
           .twitter
