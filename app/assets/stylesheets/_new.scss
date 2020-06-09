@@ -21,6 +21,10 @@
     .twitter{
       .fa-twitter{
         color: #1E90FF;
+
+        &:active {
+          border: 2px solid black;
+        }
       }
 
       &:hover {
