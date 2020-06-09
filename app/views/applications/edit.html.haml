@@ -57,10 +57,23 @@
                 = form.check_box(:skype, checked: "checked", checked_value: 1, unchecked_value: 0)
           - else
             .skype
-              %i.fab.fa-skype
-                = form.check_box(:skype, checked_value: 1, unchecked_value: 0)
+            %i.fab.fa-skype
+              = form.check_box(:skype, checked_value: 1, unchecked_value: 0)
       .n-content__btm
         = form.submit "更新", class:"btm"
       .n-content__btm
         = link_to application_path(current_user.id) do
           戻る
+
+
+<div class="fx1">
+  <div class="checkedexample">
+    <label for="labeltest">
+      <span class="fx2">ここをクリック</span>
+    </label>
+    <input type="checkbox" id="labeltest"/>
+      <div class="appear">
+        <p>隠していた文字が出てきます。</p>
+      </div>
+  </div>
+</div>

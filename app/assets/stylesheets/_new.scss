@@ -21,10 +21,7 @@
     .twitter{
       .fa-twitter{
         color: #1E90FF;
-
-        &:active {
-          border: 2px solid black;
-        }
+        
       }
 
       &:hover {
@@ -68,30 +65,14 @@
       }
     }
     .skype{
-      
       .fa-skype{
         color: #00FFFF;
       }
-
       &:hover {
         cursor: pointer;
       }
     }
-    input{
-      display: none;
-    }
   }
-  // &active{
-  //   -webkit-box-shadow:
-  //   0 0 0 15px #fff,
-  //   0 0 0 18px green;
-  //   -moz-box-shadow:
-  //       0 0 0 15px #fff,
-  //   0 0 0 18px green;
-  //   box-shadow:
-  //       0 0 0 15px #fff,
-  //   0 0 0 18px green;
-  // }
 }
   &__btm{
     padding-top: 100px;
