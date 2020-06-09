@@ -17,62 +17,63 @@
     font-size: 80px;
     justify-content: space-evenly;
     border: 2px solid #59b1eb;
-    label{
-    .twitter{
-      .fa-twitter{
-        color: #1E90FF;
-        
-      }
 
-      &:hover {
-        cursor: pointer;
-      }
+  .twitter{
+    .fa-twitter{
+      color: #1E90FF;
+      
     }
-    .line{
-      .fa-line{
-        color: #32CD32;
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    .instagram{
-      .fa-instagram{
-        color: magenta;
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    .discord{
-      .fa-discord{
-        color: #6A5ACD;
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    .steam{
-      .fa-steam{
-        color: #000011;
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    .skype{
-      .fa-skype{
-        color: #00FFFF;
-      }
-      &:hover {
-        cursor: pointer;
-      }
+    &:hover {
+      cursor: pointer;
     }
   }
+  .line{
+    .fa-line{
+      color: #32CD32;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .instagram{
+    .fa-instagram{
+      color: magenta;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .discord{
+    .fa-discord{
+      color: #6A5ACD;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .steam{
+    .fa-steam{
+      color: #000011;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .skype{
+    .fa-skype{
+      color: #00FFFF;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+input{
+  display: none;
 }
   &__btm{
     padding-top: 100px;
