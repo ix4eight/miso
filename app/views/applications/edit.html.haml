@@ -7,7 +7,7 @@
       .n-content__box
         %label
           - if @library.twitter == 1
-            .twitter
+            .twitter.qwe
               %i.fab.fa-twitter
                 = form.check_box(:twitter, checked: "checked", checked_value: 1, unchecked_value: 0)
           - else
@@ -64,16 +64,3 @@
       .n-content__btm
         = link_to application_path(current_user.id) do
           戻る
-
-
-<div class="fx1">
-  <div class="checkedexample">
-    <label for="labeltest">
-      <span class="fx2">ここをクリック</span>
-    </label>
-    <input type="checkbox" id="labeltest"/>
-      <div class="appear">
-        <p>隠していた文字が出てきます。</p>
-      </div>
-  </div>
-</div>
