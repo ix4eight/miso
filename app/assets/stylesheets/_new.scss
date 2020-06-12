@@ -64,16 +64,13 @@
     }
   }
   .skype{
-    input{
-      // display: none;
+    .fa-skype{
+      color: #00FFFF;
+      
     }
-    label{
-      .fa-skype{
-        color: #00FFFF;
-        
-      }
+    &:hover {
+      cursor: pointer;
     }
-    
   }
 }
 
@@ -110,7 +107,4 @@
       transition: 0.3s;
     }
   }
-}
-input:checked + label {
-  border: 2px solid #59b1eb;
 }

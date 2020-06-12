@@ -48,9 +48,7 @@
                   %input{:autocomplete => "current-password", :type => "password", :name => "user[password]", :id => "user_password"}
                 .login__actions
                   %input{:type => "submit", :name => "commit", :value => "ログイン", :"data-disable-with" => "ログイン"}
-                .link
-                  = link_to root_path do
-                    トップページに戻る
+
         .t-btm__1.signup-show
           %a 新規会員登録
         .signupss#signup-modal
@@ -88,6 +86,3 @@
                   %input{:autocomplete => "new-password", :type => "password", :name => "user[password_confirmation]", :id => "user_password_confirmation"}
                 .signup__actions
                   %input{:type => "submit", :name => "commit", :value => "登録", :"data-disable-with" => "登録"}
-                .link
-                  = link_to root_path do
-                    トップページに戻る
