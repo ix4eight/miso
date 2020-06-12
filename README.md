@@ -36,9 +36,9 @@ https://misoix4eight.herokuapp.com
 |nickname|string|null: false|
 |email|string|null: false|
 ### Association
-belongs_to :applications
+belongs_to :library
 
-## applicationsテーブル
+## librariesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |twitter|integer|null: false|
